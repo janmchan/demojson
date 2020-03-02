@@ -1,16 +1,26 @@
 {
-  "search" : [
-  {
-      "DisplayName": "txt.59.PostOnly",
-      "Conditions": "Condition1",
-      "ExceptionsByEmployeeId": "null",
-      "ExceptionsByEmployeeIdCount": 1
-    },
+  "search" : [ { "text": "upper_25", "value": 1}, { "text": "upper_75", "value": 2} ],
+  "query":{
+    "columns":[
+      {"text":"Time","type":"time"},
+      {"text":"Country","type":"string"},
+      {"text":"Number","type":"number"}
+    ],
+    "rows":[
+      [1234567,"SE",123],
+      [1234567,"DE",231],
+      [1234567,"US",321]
+    ],
+    "type":"table"
+  },
+  "annotations":[
     {
-      "DisplayName": "email.91.ReadOnly",
-      "Conditions": "Condition2",
-      "ExceptionsByEmployeeId": "null",
-      "ExceptionsByEmployeeIdCount": 0
+      "text": "text shown in body",
+      "title": "Annotation Title",
+      "isRegion": true,
+      "time": "timestamp",
+      "timeEnd": "timestamp",
+      "tags": ["tag1"]
     }
   ]
 }
