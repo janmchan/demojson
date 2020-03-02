@@ -1,0 +1,16 @@
+{
+  "search" : [
+  {
+      "DisplayName": "txt.59.PostOnly",
+      "Conditions": "Condition1",
+      "ExceptionsByEmployeeId": "null",
+      "ExceptionsByEmployeeIdCount": 1
+    },
+    {
+      "DisplayName": "email.91.ReadOnly",
+      "Conditions": "Condition2",
+      "ExceptionsByEmployeeId": "null",
+      "ExceptionsByEmployeeIdCount": 0
+    }
+  ]
+}
